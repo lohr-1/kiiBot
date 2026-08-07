@@ -55,7 +55,7 @@ export const botConfig = {
     defaultCooldown: 3,
 
     // If true, old commands are removed before re-registering.
-    deleteCommands: false,
+    deleteCommands: true,
 
     // Optional server ID retained for tutorial compatibility; not used for command registration.
     testGuildId: process.env.TEST_GUILD_ID,
@@ -486,7 +486,7 @@ export const botConfig = {
     utility: true,
     community: true,
     fun: true,
-    music: true,
+    music: false,
   },
 };
 
