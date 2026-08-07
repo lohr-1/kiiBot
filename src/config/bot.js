@@ -21,13 +21,26 @@ export const botConfig = {
     // 3 = Watching
     // 4 = Custom
     // 5 = Competing
-    activities: [
-      {
-        name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
-        type: 4,               // Custom
-      },
-    ],
+    //
+    // Streaming activity (type 1) requires a `url` pointing to a valid
+    // twitch.tv or youtube.com channel — Discord then renders the purple
+    // "LIVE" badge and a hover preview pulled live from Twitch/YouTube
+    // (thumbnail, viewer count, etc). Set TWITCH_CHANNEL_URL in .env.
+    activities: process.env.TWITCH_CHANNEL_URL
+      ? [
+          {
+            name: process.env.TWITCH_STREAM_TITLE || "Live on Twitch!",
+            url: process.env.TWITCH_CHANNEL_URL,
+            type: 1, // Streaming
+          },
+        ]
+      : [
+          {
+            name: "Custom Status", // required by Discord API, not shown in the client
+            state: "stalking",     // this is what people actually see
+            type: 4,               // Custom
+          },
+        ],
   },
 
   // =========================
