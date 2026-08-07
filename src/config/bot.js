@@ -25,7 +25,7 @@ export const botConfig = {
       {
         name: "Custom Status", // required by Discord API, not shown in the client
         state: "stalking",     // this is what people actually see
-        type: 4,               // Custom
+        type: 1,               // Custom
       },
     ],
   },
@@ -42,7 +42,7 @@ export const botConfig = {
     defaultCooldown: 3,
 
     // If true, old commands are removed before re-registering.
-    deleteCommands: false,
+    deleteCommands: true,
 
     // Optional server ID retained for tutorial compatibility; not used for command registration.
     testGuildId: process.env.TEST_GUILD_ID,
@@ -93,8 +93,8 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#1e1e1e",
+      secondary: "#f1f1f1",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
@@ -141,12 +141,12 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "kii ;p",
       // Footer icon URL (null = no icon).
-      icon: null,
+      icon: //i.pinimg.com/736x/c1/39/dd/c139dd90ed2ffc2ff528b19df5a36e1d.jpg,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
-    thumbnail: null,
+    thumbnail: //i.pinimg.com/736x/c1/39/dd/c139dd90ed2ffc2ff528b19df5a36e1d.jpg,
     author: {
       // Optional default embed author block.
       name: null,
