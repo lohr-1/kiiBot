@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "streaming", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        name: "i'm awesome", // required by Discord API, not shown in the client
+        state: "check my twitch",     // this is what people actually see
         type: 1,               // Custom
       },
     ],
@@ -449,7 +449,7 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
+    economy: false,
     leveling: true,
     moderation: true,
     logging: true,
@@ -457,8 +457,8 @@ export const botConfig = {
 
     // Community engagement systems.
     tickets: true,
-    giveaways: true,
-    birthday: true,
+    giveaways: false,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
