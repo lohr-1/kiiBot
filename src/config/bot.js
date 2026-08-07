@@ -143,10 +143,10 @@ export const botConfig = {
       // Default footer text used in bot embeds.
       text: "kii ;p",
       // Footer icon URL (null = no icon).
-      icon: //i.pinimg.com/736x/c1/39/dd/c139dd90ed2ffc2ff528b19df5a36e1d.jpg,
+      icon: null,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
-    thumbnail: //i.pinimg.com/736x/c1/39/dd/c139dd90ed2ffc2ff528b19df5a36e1d.jpg,
+    thumbnail: null,
     author: {
       // Optional default embed author block.
       name: null,
