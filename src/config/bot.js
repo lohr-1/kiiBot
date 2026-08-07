@@ -23,9 +23,9 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "i'm awesome", // required by Discord API, not shown in the client
-        state: "check my twitch",     // this is what people actually see
-        type: 1,               // Custom
+        name: "Custom Status", // required by Discord API, not shown in the client
+        state: "stalking",     // this is what people actually see
+        type: 4,               // Custom
       },
     ],
   },
@@ -42,7 +42,7 @@ export const botConfig = {
     defaultCooldown: 3,
 
     // If true, old commands are removed before re-registering.
-    deleteCommands: true,
+    deleteCommands: false,
 
     // Optional server ID retained for tutorial compatibility; not used for command registration.
     testGuildId: process.env.TEST_GUILD_ID,
@@ -93,8 +93,8 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#ffffff",
-      secondary: "#777b7e",
+      primary: "#336699",
+      secondary: "#2F3136",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "kii ;p",
+      text: "Titan Bot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -449,7 +449,7 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: false,
+    economy: true,
     leveling: true,
     moderation: true,
     logging: true,
@@ -457,8 +457,8 @@ export const botConfig = {
 
     // Community engagement systems.
     tickets: true,
-    giveaways: false,
-    birthday: false,
+    giveaways: true,
+    birthday: true,
     counter: true,
 
     // Security and self-service systems.
