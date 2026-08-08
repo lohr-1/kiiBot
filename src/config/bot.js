@@ -159,7 +159,7 @@ export const botConfig = {
       icon: null,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
-    thumbnail: null,
+    thumbnail: "https://i.pinimg.com/736x/74/d1/52/74d1525d57c202100af7f4703e673f4a.jpg",
     author: {
       // Optional default embed author block.
       name: null,
